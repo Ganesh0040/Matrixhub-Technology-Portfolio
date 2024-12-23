@@ -1,0 +1,82 @@
+/*------------------Legal Agreement top header (curve)Section----------------*/
+.section-about-us {
+    position: relative;
+    text-align: left;
+    color: white;
+    margin-top: 100px;
+}
+
+.wave-about {
+    position: relative;
+    z-index: 1;
+}
+
+.header-about {
+    margin: 0 0 10px;
+    position: absolute;
+    top: 40%; /* Adjust to align with the curve */
+    left: 10%; /* Adjust for desired placement */
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 50px;
+    font-family: 'KlavikaLight';
+    font-weight: normal;
+    
+}
+
+.header-about::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+/*------------------Legal Agreement Section----------------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.agreements-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 80px 130px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.agreements-text {
+    width: 68%;
+    padding-right: 20px;
+}
+
+
+.agreements-text ul {
+    list-style-type: none;
+    padding-left: 0;
+    list-style: disc;
+    
+}
+
+.agreements-text ul li {
+    margin-bottom: 15px;
+    font-size: 16.8px;
+    line-height: 1.6;
+    color: #00000096;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.agreements-image {
+    width: 30%;
+}
+
+.agreements-image img {
+    padding-top: 60px;
+    width: 100%;
+    height: auto;
+}

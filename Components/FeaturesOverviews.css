@@ -1,0 +1,80 @@
+/*======================================Features & Overviews=====================================*/
+.feature-section {
+    margin: 0px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Ensures the pseudo-element doesn't affect layout */
+  }
+  
+  .feature-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+  .feature-box {
+    width: 270px;
+    height: 320px;
+    background-color: #ffffff; /* Clean white background */
+    margin: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    border-radius: 10px;
+    border: 1px solid #e0e0e0; /* Light border for definition */
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 50px rgba(52, 58, 64, 0.2); /* Slightly darker hover shadow */
+    background-color: #f8f9fa; /* Soft gray for hover effect */
+  }
+  
+  .feature-icon {
+    font-size: 55px;
+    margin-bottom: 30px;
+    color: #2C3E50; /* Professional teal color */
+    transition: color 0.3s ease;
+  }
+  
+  .feature-box:hover .feature-icon {
+    color: #990404a2; /* Bright blue accent on hover */
+  }
+  
+  .feature-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #212529; /* Neutral dark gray */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .feature-text {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold; /* Normal weight for readability */
+    color: #4b4f52; /* Muted gray for text */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+  
+  .feature-box:hover .feature-header {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+  }
+  
+  .feature-box:hover .feature-text {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
