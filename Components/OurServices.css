@@ -1,0 +1,69 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*========================Android Section==============================*/
+.agile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 50px 150px;
+    background-color: #ffffff;
+}
+.agile-content {
+    max-width: 55%;
+}
+.agile-content h2 {
+    font-size: 25.5px;
+    margin-bottom: 10px;
+    color: #33333399;
+}
+.agile-content p {
+    font-size: 17.5px;
+    line-height: 1.6;
+    color: #33333399;
+}
+.agile-image-container {
+    max-width: 35%;
+}
+.agile-image-container img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/*========================Android Section==============================*/
+.android-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 40px 50px 0px;
+    background-color: #ffffff;
+}
+.android-image-container {
+    padding-left: 150px;
+}
+.android-image-container img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+.android-content {
+    max-width: 60%;
+}
+.android-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #33333399;
+}
+.android-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #33333399;
+    margin-bottom: 20px;
+}
