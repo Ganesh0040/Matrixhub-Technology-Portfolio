@@ -1,0 +1,188 @@
+.contact-section {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../imeges/contactBackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 0;
+}
+
+.matrix-contact-container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+
+.matrix-contact-left {
+    flex: 1;
+    text-align: left;
+}
+
+.matrix-contact-left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    margin-bottom: 20px;
+    animation: matrix-contact-zoomIn 2s;
+}
+
+.matrix-contact-info {
+    font-size: 15px;
+    line-height: 1.8;
+    animation: matrix-contact-fadeIn 2s;
+}
+
+.matrix-contact-info i {
+    font-size: 15px;
+    margin-right: 10px;
+    color: #00d0ff;
+}
+.matrix-contact-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.matrix-contact-info a:hover {
+    color: #00d0ff;
+}
+.matrix-contact-right {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 5px;
+    animation: matrix-contact-slideIn 2s;
+}
+
+.matrix-contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.matrix-contact-form-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.matrix-contact-form-header i {
+    margin-right: 10px;
+    color: #00d0ff
+}
+
+.matrix-contact-right form input[type="text"],
+.matrix-contact-right form input[type="email"],
+.matrix-contact-right form input[type="tel"],
+.matrix-contact-right form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.matrix-contact-right form input[type="text"]:focus,
+.matrix-contact-right form input[type="email"]:focus,
+.matrix-contact-right form input[type="tel"]:focus,
+.matrix-contact-right form textarea:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.matrix-contact-right form textarea {
+    resize: none;
+    height: 100px;
+}
+.matrix-contact-right form button {
+    padding: 14px 22px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #5e8fc0d7;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.matrix-contact-right form button i {
+    margin-right: 14px;
+    font-size: 18px;
+    color: #002b35;
+}
+
+.matrix-contact-right form button:hover {
+    background-color: #347cc4;
+}
+
+.matrix-contact-header {
+    color: #ffffffe0;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: matrix-contact-fadeIn 1s;
+}
+
+.matrix-contact-paragraph {
+    color: #ffffffb9;
+    font-size: 16px;
+    margin-bottom: 50px;
+    animation: matrix-contact-fadeIn 1.5s;
+}
+
+.matrix-contact-social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.matrix-contact-social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.matrix-contact-social-icons a:hover {
+    color: #00d0ff;
+}
+
+@keyframes matrix-contact-fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes matrix-contact-zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+@keyframes matrix-contact-slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}

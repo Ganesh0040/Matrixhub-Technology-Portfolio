@@ -1,69 +1,115 @@
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.matrix-container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
 }
-
-/*========================Android Section==============================*/
-.agile-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 0px 50px 150px;
-    background-color: #ffffff;
-}
-.agile-content {
-    max-width: 55%;
-}
-.agile-content h2 {
-    font-size: 25.5px;
-    margin-bottom: 10px;
-    color: #33333399;
-}
-.agile-content p {
-    font-size: 17.5px;
-    line-height: 1.6;
-    color: #33333399;
-}
-.agile-image-container {
-    max-width: 35%;
-}
-.agile-image-container img {
-    width: 60%;
-    height: auto;
-    border-radius: 8px;
-}
-
-
-/*========================Android Section==============================*/
-.android-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px 40px 50px 0px;
-    background-color: #ffffff;
-}
-.android-image-container {
-    padding-left: 150px;
-}
-.android-image-container img {
-    width: 70%;
-    height: auto;
-    border-radius: 8px;
-}
-.android-content {
-    max-width: 60%;
-}
-.android-content h2 {
+.matrix-container h2{
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #000000;
     font-size: 24px;
-    margin-bottom: 10px;
-    color: #33333399;
-}
-.android-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #33333399;
     margin-bottom: 20px;
+}
+.matrix-section {
+    background: #fff;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.matrix-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 3px 3px rgba(255, 0, 0, 0.837);
+}
+.matrix-section img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease;
+}
+.matrix-section p {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+    animation: slideUp 0.5s ease;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.matrixhub-title-container {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('../imeges/ourServicesBackground.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  .Title-header {
+    font-family: 'Roboto', Arial, sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+    font-size: 3rem;
+    animation: slideIn 1.5s ease-out;
+  }
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }.home-button {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    padding: 5px 20px; /* Added slight vertical padding for better spacing */
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9); /* Slightly increased opacity for better visibility */
+    background: rgba(0, 0, 0, 0.2); /* Added subtle background for better readability */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional subtle border */
+    border-radius: 8px; /* Slightly increased border-radius for smoother corners */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.home-button:hover {
+    color: #ffffff; /* Text turns white on hover */
+    background: #1443ff; /* Background turns blue on hover */
+    border-color: #1443ff; /* Border matches background on hover */
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <link rel="stylesheet" href="./Portfoilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-header">
+        <h4>Our Projects</h4>
+        <h2>Projects Completed for Our Happy Clients</h2>
+        <div class="horizontal-line"></div>
+    </div>
+    <div class="portfolio-buttons">
+        <button onclick="showGallery('portfolio-projects')"><i class="fas fa-clipboard-list icon"></i> Our Projects</button>
+        <button onclick="showGallery('android-apps')"><i class="fab fa-android icon"></i> Android Application</button>
+    </div>
+    <div id="portfolio-projects" class="portfolio-gallery">
+        <!-- 15 Project Images -->
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x400" alt="Project Image" onclick="showFullImage(this)">
+            <div class="item-info">Project 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x400" alt="Project Image" onclick="showFullImage(this)">
+            <div class="item-info">Project 2</div>
+        </div>
+        <!-- More images as needed -->
+    </div>
+    <div id="android-apps" class="portfolio-gallery hidden">
+        <!-- 3 Android App Images -->
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x400" alt="Android App Image" onclick="showFullImage(this)">
+            <div class="item-info">Android App 1</div>
+        </div>
+    </div>
+
+    <!-- Full Image Viewer -->
+    <div id="full-image-viewer" class="full-image-viewer hidden">
+        <span class="close-button" onclick="hideFullImage()">&times;</span>
+        <img id="full-image" src="" alt="Full Image">
+    </div>
+
+    <script>
+        function showGallery(type) 
+        {
+            document.getElementById('portfolio-projects').classList.add('hidden');
+            document.getElementById('android-apps').classList.add('hidden');
+            document.getElementById(type).classList.remove('hidden');
+        }
+
+        function showFullImage(img) 
+        {
+            document.getElementById('full-image').src = img.src;
+            document.getElementById('full-image-viewer').classList.remove('hidden');
+        }
+
+        function hideFullImage() {
+            document.getElementById('full-image-viewer').classList.add('hidden');
+        }
+
+    </script>
+</body>
+</html>

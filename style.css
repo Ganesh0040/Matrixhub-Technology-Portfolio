@@ -1064,6 +1064,17 @@ nav ul li:hover > a::after {
   margin-right: 10px;
   color: #E67E22; /* Accent vibrant hue for interactivity */
 }
+.phone a,
+.email a {
+ text-decoration: none;
+ color: white
+}
+.phone a:hover {
+  color: #E67E22; /* Interactive hover color */
+}
+.email a:hover {
+  color: #E67E22; /* Interactive hover color */
+}
 .social-icons {
   display: flex;
   justify-content: flex-start;
@@ -1119,8 +1130,12 @@ nav ul li:hover > a::after {
   margin-right: 10px;
   color: #1ABC9C; /* Subtle green tone for icons */
 }
+.service-item a{
+  text-decoration: none;
+  color: white;
+}
 
-.service-item:hover {
+.service-item:hover a{
   color: #E67E22; /* Accent vibrant hue on hover */
   transform: translateX(5px);
 }
